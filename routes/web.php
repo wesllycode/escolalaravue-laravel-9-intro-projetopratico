@@ -19,4 +19,4 @@ use App\Http\Controllers\{
 
 Route::get('/',[HomeController::class,'index']);
 
-Route::get('/',[ProdutoController::class, 'index']);
+Route::get('/produto',[ProdutoController::class, 'index']);
