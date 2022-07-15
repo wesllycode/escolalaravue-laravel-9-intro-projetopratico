@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\homeController;
+use App\Http\Controllers\{
+    HomeController,
+    ProdutoController
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +17,6 @@ use App\Http\Controllers\homeController;
 |
 */
 
-Route::get('/',[homeController::class,'index']);
+Route::get('/',[HomeController::class,'index']);
+
+Route::get('/',[ProdutoController::class, 'index']);
