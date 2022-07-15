@@ -17,10 +17,6 @@ use App\Http\Controllers\{
 |
 */
 
-Route::get('/', function (){
-    return 'oi';
-});
-
 Route::get('/',[HomeController::class,'index']);
 
 Route::get('/produto',[ProdutoController::class, 'index']);
