@@ -23,3 +23,5 @@ Route::get('/',[HomeController::class,'index']);
 Route::get('/produto',[ProdutoController::class, 'index']);
 
 Route::get('/admin/products',[AdminController::class, 'index']);
+
+Route::get('/admin/products/edit',[AdminController::class,'edit']);
