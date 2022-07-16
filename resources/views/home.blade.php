@@ -1,5 +1,10 @@
 @extends('layouts.default')
 @section('content')
+
+@php
+dd($products)
+@endphp
+
 <section class="text-gray-600">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
