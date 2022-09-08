@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
     HomeController,
-    ProdutoController
+    ProdutoController,
+    AdminController
 };
 
 /*
@@ -20,3 +21,7 @@ use App\Http\Controllers\{
 Route::get('/',[HomeController::class,'index']);
 
 Route::get('/produto',[ProdutoController::class, 'index']);
+
+Route::get('/admin/products',[AdminController::class, 'index']);
+
+Route::get('/admin/products/edit',[AdminController::class,'edit']);
