@@ -20,7 +20,7 @@ use App\Http\Controllers\{
 
 Route::get('/',[HomeController::class,'index']);
 
-Route::get('/produto',[ProdutoController::class, 'index']);
+Route::get('/product',[ProdutoController::class, 'index']);
 
 Route::get('/admin/products',[AdminController::class, 'index']);
 
