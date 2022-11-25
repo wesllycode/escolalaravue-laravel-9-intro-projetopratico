@@ -1,11 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{
-    HomeController,
-    ProdutoController,
-    AdminController
-};
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\AdminController;
+
+/*
+/ Fiz essa mudança do namespace com elias que foi implementado a partir do php 5.3
+/ porque assim fica menos confuso de acordo com livro php moderno de Josh Lockhat pag 33.
+/*
 
 /*
 |--------------------------------------------------------------------------
