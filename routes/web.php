@@ -27,4 +27,4 @@ Route::get('/product/{product:slug}',[ProdutoController::class, 'show'])->name('
 
 Route::get('/admin/products',[AdminController::class, 'index'])->name('admin.products');
 
-Route::get('/admin/products/edit',[AdminController::class,'edit']);
+Route::get('/admin/product/edit/{product:slug}',[AdminController::class,'edit'])->name('edit.product');

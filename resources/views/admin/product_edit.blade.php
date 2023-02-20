@@ -1,5 +1,8 @@
 @extends('layouts.default')
 @section('content')
+
+    @dd($request)
+
 <section class="text-gray-600">
     <div class="container px-5 py-24 mx-auto">
         <div class="lg:w-2/4 w-full mx-auto overflow-auto">
