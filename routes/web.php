@@ -23,7 +23,7 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 
-Route::get('/product/{product}',[ProdutoController::class, 'show'])->name('product');
+Route::get('/product/{product:slug}',[ProdutoController::class, 'show'])->name('product');
 
 Route::get('/admin/products',[AdminController::class, 'index']);
 
