@@ -15,13 +15,14 @@ class AdminController extends Controller
     }
 
     // Exibir a página Editar
-    public function edit( ){
+    public function edit(){
         return view ('admin.product_edit');
     }
 
     // Vai receber requisição para Inserir os dados que foi colocado no Editar
     public function update(Request $request){
-
+        $dados = $request->all();
+        $this->edit();
     }
 
     // Para exibir a página create
