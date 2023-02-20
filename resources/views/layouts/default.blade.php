@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta  http-equiv="X-UA-Compatible" content="ie=edge"    >
     <title>Dashboard</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -76,6 +77,6 @@
             <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
         </div>
     </div>
-</footer>
+    Show
 </body>
 </html>
