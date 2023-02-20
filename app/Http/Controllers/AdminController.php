@@ -26,7 +26,7 @@ class AdminController extends Controller
 
     // Para exibir a página create
     public function create(){
-
+        return view('admin.create');
     }
 
     // Vai receber requisição para inserir os dados
