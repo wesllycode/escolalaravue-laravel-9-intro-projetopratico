@@ -25,6 +25,6 @@ Route::get('/',[HomeController::class,'index'])->name('home');
 
 Route::get('/product/{product:slug}',[ProdutoController::class, 'show'])->name('product');
 
-Route::get('/admin/products',[AdminController::class, 'index']);
+Route::get('/admin/products',[AdminController::class, 'index'])->name('admin.products');
 
 Route::get('/admin/products/edit',[AdminController::class,'edit']);
