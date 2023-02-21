@@ -29,7 +29,7 @@ Route::get('/admin/products',[AdminController::class, 'index'])->name('admin.pro
 
 
 Route::get('/admin/product/create',[AdminController::class,'create'])->name('create.product');
-Route::post('/admin/product/create',[AdminController::class,'store'])->name('create.product');
+Route::post('/admin/product/create',[AdminController::class,'store'])->name('store.product');
 
 Route::get('/admin/product/{product:slug}/edit',[AdminController::class,'edit'])->name('edit.product');
 Route::put('/admin/product/{product:slug}',[AdminController::class,'update'])->name('update.product');

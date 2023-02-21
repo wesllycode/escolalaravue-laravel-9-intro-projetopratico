@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Admin\StoreRequest;
 use App\Models\Product;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -31,7 +33,12 @@ class AdminController extends Controller
     }
 
     // Vai receber requisição para inserir os dados
-    public function store(){
+    public function store(StoreRequest $request) {
+        $validated = $request->validated();
+        $getProduto = Product::create($validated);
+
+        redirect ('/');
+
 
     }
 

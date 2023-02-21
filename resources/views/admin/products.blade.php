@@ -1,6 +1,6 @@
 @extends('layouts.default')
-
 @section('content')
+
 <section class="text-gray-600">
     <div class="container px-5 py-24 mx-auto">
         <div class="lg:w-2/3 w-full mx-auto overflow-auto">
@@ -30,7 +30,6 @@
                     <td class="px-4 py-3">{{ $product->price }}</td>
                     <td class="px-4 py-3">{{$product->stock}}</td>
                     <td class="px-4 py-3 text-sm text-right space-x-3 text-gray-900">
-                        {{ route('product', $product->slug) }}
                         <a href="{{route('edit.product', $product->slug)}}" class="mt-3 text-indigo-500 inline-flex items-center">Editar</a>
                         <a class="mt-3 text-indigo-500 inline-flex items-center">Deletar</a>
                     </td>
