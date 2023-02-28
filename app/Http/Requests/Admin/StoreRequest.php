@@ -17,15 +17,15 @@ class StoreRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
+     * @return array<string, mixed>
      */
-    public function rules(): array
+    public function rules(): mixed
     {
 
         return [
             'name' => 'string|required',
-            'slug' => 'string|required',
-            'cover'=> 'file|nullable',
+            'slug' => 'string|nullable',
+            'cover'=> 'nullable',
             'price' => 'string|required',
             'description' => 'required|string',
             'stock' => 'string|nullable'
@@ -34,6 +34,12 @@ class StoreRequest extends FormRequest
         ];
     }
 
+    /** 
+     * Get he errors messagens personalized
+     * 
+     * @return array
+    */   
+
     public function messages(){
         return [
             'name.required' => 'Obrigatório inserir um nome',
@@ -41,7 +47,8 @@ class StoreRequest extends FormRequest
             'cover.required' => 'Obrigatório inserir uma imagem',
             'price.required' => 'Obrigatório inserir um preço',
             'description.required' => 'Obrigatório inserir uma descrição',
-            'stock.required' => 'Obrigatório inserir uma quantidade'
+            'stock.required' => 'Obrigatório inserir uma quantidade',
+            'cover.mimes' => 'Apenas formato válido'
         ];
     }
 }

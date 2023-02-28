@@ -17,9 +17,5 @@ class Product extends Model
         'description',
         'stock',
     ];
-
-    public static function create($validated)
-    {
-    }
-
+   
 }
