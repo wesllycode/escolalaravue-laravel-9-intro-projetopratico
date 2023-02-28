@@ -11,10 +11,15 @@ class Product extends Model
 
     protected $fillable = [
         'name',
+        'slug',
         'cover',
         'price',
         'description',
         'stock',
     ];
+
+    public static function create($validated)
+    {
+    }
 
 }

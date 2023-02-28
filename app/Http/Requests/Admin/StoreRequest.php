@@ -21,13 +21,14 @@ class StoreRequest extends FormRequest
      */
     public function rules(): array
     {
+
         return [
-            'name' => 'required',
-            'slug' => 'required',
-            'cover'=> 'required|file|mimes:jpeg,jpg,png',
-            'price' => 'required',
-            'description' => 'required',
-            'stock' => 'required'
+            'name' => 'string|required',
+            'slug' => 'string|required',
+            'cover'=> 'file|nullable',
+            'price' => 'string|required',
+            'description' => 'required|string',
+            'stock' => 'string|nullable'
 
 
         ];

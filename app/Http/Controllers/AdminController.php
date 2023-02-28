@@ -6,6 +6,7 @@ use App\Http\Requests\Admin\StoreRequest;
 use App\Models\Product;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
@@ -35,7 +36,8 @@ class AdminController extends Controller
     // Vai receber requisição para inserir os dados
     public function store(StoreRequest $request) {
         $validated = $request->validated();
-        $getProduto = Product::create($validated);
+        $validated['slug'] = Str::slug($validated['name']);
+        Product::create($validated);
 
         redirect ('/');
 

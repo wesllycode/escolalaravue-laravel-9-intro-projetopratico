@@ -17,7 +17,7 @@
                             <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
                         @error('name')
-                        <div>{{ $message }}</div>
+                            <div class="text-red-400 text-sm">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -28,7 +28,7 @@
                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                         </div>
                         @error('price')
-                        <div>{{ $message }}</div>
+                            <div class="text-red-400 text-sm">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -39,7 +39,7 @@
                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
                         @error('stock')
-                        <div>{{ $message }}</div>
+                            <div class="text-red-400 text-sm">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -50,7 +50,7 @@
                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                         </div>
                         @error('cover')
-                            <div>{{ $message }}</div>
+                            <div class="text-red-400 text-sm">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -62,7 +62,7 @@
                                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
                         </div>
                         @error('description')
-                            <div>{{ $message }}</div>
+                            <div class="text-red-400 text-sm">{{ $message }}</div>
                         @enderror
                     </div>
 
